@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'me.loneyer'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'net.portswigger.burp.extender:burp-extender-api:1.7.22'
+}
+
+test {
+    useJUnitPlatform()
+}
